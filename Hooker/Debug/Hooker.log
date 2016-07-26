@@ -1,0 +1,16 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  packet.cpp
+c:\users\klusbert\desktop\ladabot\hooker\packet.cpp(58): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+  Core.cpp
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(122): warning C4101: 'funcAddress' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'count' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'guiID' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'itemID' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'height' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'width' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(207): warning C4101: 'bSize' : unreferenced local variable
+c:\users\klusbert\desktop\ladabot\hooker\core.cpp(576): warning C4800: 'BYTE' : forcing value to bool 'true' or 'false' (performance warning)
+  Constant.cpp
+  Generating Code...
+  Hooker.vcxproj -> C:\Users\Klusbert\Desktop\LadaBot\Hooker\..\Debug\Hooker.dll

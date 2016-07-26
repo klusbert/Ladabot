@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<Global xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Waypoints>
+    <Waypoint>
+      <Location>
+        <X>32820</X>
+        <Y>32087</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment>Start</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32830</X>
+        <Y>32082</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32839</X>
+        <Y>32079</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32840</X>
+        <Y>32081</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32843</X>
+        <Y>32079</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32844</X>
+        <Y>32076</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32853</X>
+        <Y>32088</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32842</X>
+        <Y>32080</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32833</X>
+        <Y>32075</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32828</X>
+        <Y>32071</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32840</X>
+        <Y>32081</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Rope</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32828</X>
+        <Y>32081</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32816</X>
+        <Y>32084</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32803</X>
+        <Y>32081</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32800</X>
+        <Y>32085</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32799</X>
+        <Y>32089</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32804</X>
+        <Y>32078</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32809</X>
+        <Y>32075</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32800</X>
+        <Y>32085</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Rope</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32817</X>
+        <Y>32084</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32809</X>
+        <Y>32090</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32809</X>
+        <Y>32098</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32814</X>
+        <Y>32102</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32819</X>
+        <Y>32094</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32824</X>
+        <Y>32093</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32809</X>
+        <Y>32109</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32806</X>
+        <Y>32106</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32812</X>
+        <Y>32105</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32814</X>
+        <Y>32102</Y>
+        <Z>9</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Rope</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32806</X>
+        <Y>32092</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32815</X>
+        <Y>32093</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>If Client.Player.Capacity &lt;= CapToLeave Then
+      NextWaypoint()
+Else
+     GotoLabel ="Start"
+End if</Script>
+      <Comment>Check</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32820</X>
+        <Y>32084</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Rope</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32824</X>
+        <Y>32091</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Machete</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32826</X>
+        <Y>32092</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32832</X>
+        <Y>32093</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32839</X>
+        <Y>32102</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32855</X>
+        <Y>32125</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32862</X>
+        <Y>32126</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32885</X>
+        <Y>32125</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32898</X>
+        <Y>32107</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32901</X>
+        <Y>32072</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32971</X>
+        <Y>32053</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>33019</X>
+        <Y>32053</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>Say("Hi")
+Wait(1000)
+NpcSay("Deposit all")
+Wait(1000)
+NpcSay("Yes")
+Wait(1000)
+NpcSay("Balance")
+
+NextWaypoint()</Script>
+      <Comment>Depositing</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>33010</X>
+        <Y>32052</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32965</X>
+        <Y>32053</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32931</X>
+        <Y>32068</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32898</X>
+        <Y>32080</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32880</X>
+        <Y>32126</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32862</X>
+        <Y>32126</Y>
+        <Z>6</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32842</X>
+        <Y>32112</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32842</X>
+        <Y>32099</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32835</X>
+        <Y>32091</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32824</X>
+        <Y>32091</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Machete</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32821</X>
+        <Y>32086</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32820</X>
+        <Y>32084</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Shovel</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+  </Waypoints>
+  <LootList>
+    <LootItem>
+      <Id>3031</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>16</ContainerDestionation>
+    </LootItem>
+    <LootItem>
+      <Id>12554</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>16</ContainerDestionation>
+    </LootItem>
+  </LootList>
+  <TargetList>
+    <Target>
+      <Name>snake</Name>
+      <FollowType>Reach</FollowType>
+      <Script>fastColoredTextBox1</Script>
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>rotworm</Name>
+      <FollowType>Reach</FollowType>
+      <Script>fastColoredTextBox1</Script>
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>carrion worm</Name>
+      <FollowType>Reach</FollowType>
+      <Script>fastColoredTextBox1</Script>
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>Feverish Citizen</Name>
+      <FollowType>Reach</FollowType>
+      <Script>fastColoredTextBox1</Script>
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+  </TargetList>
+  <ScriptList />
+  <GlobalVariables>'Your variables here
+Dim CapToLeave As integer = 40</GlobalVariables>
+  <PlayerOnScreen>false</PlayerOnScreen>
+  <PrivateMessage>false</PrivateMessage>
+  <Message>false</Message>
+  <lowHp>false</lowHp>
+  <lowHpValue>0</lowHpValue>
+  <LowMana>false</LowMana>
+  <LowManavalue>0</LowManavalue>
+  <FriendList />
+  <WalkerEnabled>true</WalkerEnabled>
+  <SkipRange>3</SkipRange>
+  <SkipWalk>true</SkipWalk>
+  <AttackerEnabled>true</AttackerEnabled>
+  <MinDist>2</MinDist>
+  <MaxDist>4</MaxDist>
+  <StickToTarget_Prio>2</StickToTarget_Prio>
+  <LooterEnabled>true</LooterEnabled>
+  <OpenCorpses>true</OpenCorpses>
+  <LootWhenAllIsDead>false</LootWhenAllIsDead>
+  <LootFriendly>false</LootFriendly>
+  <OpenNextBp>false</OpenNextBp>
+  <FullLight>true</FullLight>
+  <ManatrainEnable>true</ManatrainEnable>
+  <ManaTrainMana>170</ManaTrainMana>
+  <ManatrainSpell>exura ico</ManatrainSpell>
+  <SpellHealHealth />
+  <SpellHealMana />
+  <SpellHealSpell />
+  <SpellHealEnable>false</SpellHealEnable>
+  <ItemHealHealth />
+  <ItemHealItem />
+  <ItemHealEnable>false</ItemHealEnable>
+  <ManaRestoreMana />
+  <ManaRestoreItem />
+  <ManaRestoreEnable>false</ManaRestoreEnable>
+</Global>
