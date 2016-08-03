@@ -44,9 +44,6 @@ struct ToClientPacket
 
 TPacketStream * pRecvStream = 0;
 DWORD OldGetNextPacket = 0;
-DWORD oldSendPcaket = 0;
-
-
 
 HINSTANCE hMod = 0;
 
@@ -67,9 +64,7 @@ BYTE* OldNopFPS = 0;
 bool UnloadMe = false;
 //HANDLE process =0;
 DWORD OrigPeekAddress = 0;
-SOCKET sock = 0;
-DWORD OldGotoCall = 0;
-DWORD GotoFunction = 0;
+
 CRITICAL_SECTION QueuePacketCriticalSection;
 CRITICAL_SECTION NormalTextCriticalSection;
 CRITICAL_SECTION PipeWriteCriticalSection;
@@ -83,24 +78,7 @@ void EnableHooks()
 		
 	OldPrintFPS = HookCall(Consts::ptrPrintFPS, (DWORD)&MyPrintFps);
 	OldNopFPS = Nop(Consts::ptrNopFPS, 6);
-	
-	/*
 
-
-	OrigSendAddress = (DWORD)GetProcAddress(GetModuleHandleA("WS2_32.dll"), "send");	
-	OrigSend = (PSEND)OrigSendAddress;
-	funcAddress = (DWORD)&MySend;
-	VirtualProtect((LPVOID)Consts::ptrSend, 4, PAGE_READWRITE, &dwOldProtect);
-	memcpy((LPVOID)Consts::ptrSend, &funcAddress, 4);
-	VirtualProtect((LPVOID)Consts::ptrSend, 4, dwOldProtect, &dwNewProtect);
-
-	OrigRecvAddress = (DWORD)GetProcAddress(GetModuleHandleA("WS2_32.dll"), "recv");
-	OrigRecv = (PRECV)OrigRecvAddress;
-	funcAddress = (DWORD)&MyRecv;
-	VirtualProtect((LPVOID)Consts::ptrRecv, 4, PAGE_READWRITE, &dwOldProtect);
-	memcpy((LPVOID)Consts::ptrRecv, &funcAddress, 4);
-	VirtualProtect((LPVOID)Consts::ptrRecv, 4, dwOldProtect, &dwNewProtect);
-		*/
 
 	OldGetNextPacket = InlineHookCall(Consts::GetNextPacketFunc, (DWORD)&OnGetNextPacketfunc, (LPDWORD)&TfGetNextPacket);
 
@@ -112,67 +90,69 @@ void EnableHooks()
 	VirtualProtect((LPVOID)Consts::Peek, 4, dwOldProtect, &dwNewProtect);	
 
 
-
-
+	DWORD hookAddy = Consts::SENDOUTGOINGPACKET;
+	int hookLen = 5;
+	jmpBackAddy = hookAddy + hookLen;
+    DetourHook((void*)hookAddy, MySendPacketFunc, hookLen);
 	HookInjected = true;
+
+	
 }
 
 void DissableHooks()
 {	
 	DWORD dwOldProtect, dwNewProtect, funcAddress;
-
-	/*
-
-	
-	VirtualProtect((LPVOID)Consts::ptrSend, 4, PAGE_READWRITE, &dwOldProtect);
-	memcpy((LPVOID)Consts::ptrSend, &OrigSendAddress, 4);
-	VirtualProtect((LPVOID)Consts::ptrSend, 4, dwOldProtect, &dwNewProtect);
-
-	VirtualProtect((LPVOID)Consts::ptrRecv, 4, PAGE_READWRITE, &dwOldProtect);
-	memcpy((LPVOID)Consts::ptrRecv, &OrigRecvAddress, 4);
-	VirtualProtect((LPVOID)Consts::ptrRecv, 4, dwOldProtect, &dwNewProtect);
-		*/
 	UnhookCall(Consts::ptrPrintFPS, OldPrintFPS);
+
 	UnNop(Consts::ptrNopFPS, OldNopFPS, 6);
 	UnhookCall(Consts::GetNextPacketFunc, OldGetNextPacket);
-	UnhookCall(0x41f72a, oldSendPcaket);
 	
 	VirtualProtect((LPVOID)Consts::Peek, 4, PAGE_READWRITE, &dwOldProtect);
 	memcpy((LPVOID)Consts::Peek, &OrigPeekAddress, 4);
 	VirtualProtect((LPVOID)Consts::Peek, 4, dwOldProtect, &dwNewProtect);
 
 
+	BYTE RestoreBytes[5] = { 0x55, 0x8B, 0xEC, 0x6A, 0xFF };
+	VirtualProtect((LPVOID)(Consts::SENDOUTGOINGPACKET), 5, PAGE_READWRITE, &dwOldProtect);
+	memcpy((LPVOID)(Consts::SENDOUTGOINGPACKET), &RestoreBytes, 5);
+	VirtualProtect((LPVOID)(Consts::SENDOUTGOINGPACKET), 5, dwOldProtect, &dwNewProtect);
 
 
 }
 
-int WINAPI MySend(SOCKET s, char* buf, int len, int flags)
-{
-	sock = s;
-	if (len>0)
-	{
-		Packet* packet = new Packet(((WORD)buf) + 1);
-		packet->AddByte(2);
-		for (int i = 0; i<len; i++)
-			packet->AddByte((BYTE)buf[i]);
-		PipeWrite(packet);
+void __declspec(naked) MySendPacketFunc()
+{	
+
+	_asm {
+			mov edx, [Consts::Connection]
+			cmp[edx], 11
+			jnz Skip
+			CALL Test
+		Skip:
+		    PUSH EBP
+			MOV EBP,ESP
+			PUSH -0x1
+			jmp[jmpBackAddy]
 	}
 
-	return OrigSend(s, buf, len, flags);
 }
-int WINAPI MyRecv(SOCKET s, char* buf, int len, int flags)
+void Test()
 {
-	int bytesCount = OrigRecv(s, buf, len, flags);
-	if (bytesCount>0)
+	int Position = 0;
+	Packet* packet;
+	DWORD dataLen = (*(DWORD*)Consts::OUTGOINGDATALEN);
+	packet = new Packet;//Packet to bot
+	packet->AddByte(2);
+	//got full packet
+	for (DWORD i = 8; i < dataLen ; i++)
 	{
-		Packet* packet = new Packet(((WORD)buf) + 1);
-		packet->AddByte(1);
-		for (int i = 0; i<bytesCount; i++)
-			packet->AddByte((BYTE)buf[i]);
-		PipeWrite(packet);
+		DWORD Adr = Consts::OUTGOINGDATASTREAM + i;
+		BYTE bytedat = (*(BYTE*)Adr);
+		packet->AddByte(bytedat);
 	}
-	return bytesCount;
+	PipeWrite(packet);
 }
+
 
 void __declspec(naked) MyPrintFps(int nSurface, int nX, int nY, int nFont, int nRed, int nGreen, int nBlue, int nAlign)
 {
@@ -250,17 +230,6 @@ bool WINAPI MyPeekMessageA(LPMSG pMsg, HWND hwnd, UINT wMsgFilterMin, UINT wMsgF
 	return oldPeek(pMsg, hwnd, wMsgFilterMin, wMsgFilterMax, wRemoveMsg);
 }
 
-int SendOutoging(char* buffer)
-{	
-		Packet* packet;
-		packet = new Packet;
-		packet->AddByte(0xF3);
-		PipeWrite(packet);
-
-	return 0;
-}
-
-
 int OnGetNextPacketfunc()
 {	
 
@@ -275,12 +244,27 @@ int OnGetNextPacketfunc()
 	}
 
 	
-bool Parsing = true;
+
 	int iCmd = -1;
 	int Position = 0;
 	Packet* packet;
 
 		iCmd = TfGetNextPacket();
+	if (pRecvStream->dwPos - 1 == 8)
+		{
+			Position = pRecvStream->dwPos;
+			packet = new Packet;//Packet to bot
+			packet->AddByte(1);
+			//got full packet
+			//packet->AddWord((WORD)Position);
+			packet->AddByte((BYTE)iCmd);		
+			while (Position < pRecvStream->dwSize)
+			{
+				packet->AddByte(Packet::ReadByte((BYTE*)pRecvStream->pBuffer, &Position));
+			}
+			PipeWrite(packet);
+		}
+		
 		if (iCmd == 0x6A)
 		{
 			Position = pRecvStream->dwPos;
@@ -394,7 +378,6 @@ void UnNop(DWORD dwAddress, BYTE* OldBytes, int size)
 }
 DWORD HookCall(DWORD dwAddress, DWORD dwFunction)
 {   
-	
 
 	DWORD dwOldProtect, dwNewProtect, dwOldCall, dwNewCall;
 	//CALL opcode = 0xE8 <4 byte for distance>
@@ -410,6 +393,22 @@ DWORD HookCall(DWORD dwAddress, DWORD dwFunction)
 	VirtualProtect((LPVOID)(dwAddress), 5, dwOldProtect, &dwNewProtect); //Restore access
 
 	return dwOldCall; 
+}
+bool DetourHook(void * toHook, void* ourFunct, int len)
+{
+	if (len < 5){
+		return false;
+	}
+	DWORD curProtection;
+	VirtualProtect(toHook, len, PAGE_EXECUTE_READWRITE, &curProtection);
+	memset(toHook, 0x90, len);
+	DWORD relativeAddress = ((DWORD)ourFunct - (DWORD)toHook) - 5;
+	*(BYTE*)toHook = 0xE9;
+	*(DWORD*)((DWORD)toHook + 1) = relativeAddress;
+	DWORD temp;
+	VirtualProtect(toHook, len, curProtection, &temp);
+	return true;
+
 }
 DWORD InlineHookCall(DWORD dwCallAddress, DWORD dwNewAddress, LPDWORD pOldAddress)
 {
@@ -641,22 +640,7 @@ void ParseSetAddress(BYTE *Buffer, int position)
 		    break;
 			case 18:
 				Consts::Connection = Adr;
-			break;
-			case 19:
-				Consts::AttackFunction = Adr;
-				Attack = (_Attack*)Adr;
-		    break;
-			case 20:
-				Consts::ItemMoveFunc = Adr;
-			break;
-			case 21:
-				Consts::TalkFunc = Adr;
-				Speak = (_Speak*)Adr;
-				break;
-			case 22:
-				Consts::ItemUseFunc = Adr;
-				ItemUse = (_ItemUse*)Adr;
-			break;
+			break;		
 
 					
 		}
@@ -701,10 +685,7 @@ inline void PipeOnRead(BYTE* Buffer)
 		break;
 		case 9: // sénd packet to server				
 			SendPacketToServer(Buffer, position);
-		break;
-		case 11:
-			InternalFunctions(Buffer, position);
-			break;
+		break;		
 		case 10:
 			int Diagonal = Packet::ReadByte(Buffer, &position);
 			int y = Packet::ReadShort(Buffer, &position);
@@ -714,8 +695,7 @@ inline void PipeOnRead(BYTE* Buffer)
 				push Diagonal
 			    push y
 				push x
-				call Consts::WalkFunc
-				
+				call Consts::WalkFunc			
 
 			}
 		break;
@@ -723,100 +703,9 @@ inline void PipeOnRead(BYTE* Buffer)
 		
 	}
 }
-void InternalFunctions(BYTE *Buffer, int position)
-{
-	byte type = Packet::ReadByte(Buffer, &position);
-	switch (type)
-	{
-	case 0x96:
-	{
-				 int sType = Packet::ReadByte(Buffer, &position);
-				 string text = Packet::ReadString(Buffer, &position);
-				 Speak(sType, (char*)text.c_str());
-	}	
-	
-	case 0x82:
-	{
-				// ItemUse(Buffer, position);
-				 int x = Packet::ReadWord(Buffer, &position);
-				 int y = Packet::ReadWord(Buffer, &position);
-				 byte z = Packet::ReadByte(Buffer, &position);
-				 int itemId = Packet::ReadWord(Buffer, &position);
-				 byte stack = Packet::ReadByte(Buffer, &position);
-				 byte index = Packet::ReadByte(Buffer, &position);
-				 ItemUse(x, y, z, itemId, stack, index);
-				 break;
-	}
-		
-	case 0x78:
-	{
-				 ItemMoveFunction(Buffer, position);
-				 break;
-	
-	}
-
-	case 0xA1:
-	{
-				 Attack(Packet::ReadDWord(Buffer, &position));
-				 break;
-	}
-	
-	default:
-		break;
-	}
-}
-
-void ItemMoveFunction(BYTE *Buffer, int position)
-{
-	int FromX = Packet::ReadWord(Buffer, &position);
-	int FromY = Packet::ReadWord(Buffer, &position);
-	int FromZ = Packet::ReadByte(Buffer, &position);
-	int ItemId = Packet::ReadWord(Buffer, &position);
-	int Stack = Packet::ReadByte(Buffer, &position);
-	int ToX = Packet::ReadWord(Buffer, &position);
-	int ToY = Packet::ReadWord(Buffer, &position);
-	int ToZ = Packet::ReadByte(Buffer, &position);
-	int Count = Packet::ReadByte(Buffer, &position);
 
 
-	_asm
-	{
-		push Count
-		push ToZ
-		push ToY
-		push ToX
-		push Stack
-		push ItemId
-		push FromZ
-		mov edx, FromY
-		mov ecx, FromX
-		call Consts::ItemMoveFunc
-		ADD ESP, 0x1C
-	}
-}
 
-void ItemUse2(BYTE *Buffer, int position)
-{
-	int x = Packet::ReadWord(Buffer, &position);
-	int y = Packet::ReadWord(Buffer, &position);
-	int z = Packet::ReadByte(Buffer, &position);
-	int itemId = Packet::ReadWord(Buffer, &position);
-	int stack = Packet::ReadByte(Buffer, &position);
-	int index = Packet::ReadByte(Buffer, &position);
-	
-	_asm
-	{
-			push index
-			push stack
-			push itemId
-			push z
-			mov edx, y
-			mov ecx, x
-			call Consts::ItemUseFunc
-			ADD ESP, 0x10
-
-	}
-}
 
 void SendPacketToServer(BYTE *Buffer, int position)
 {
@@ -839,15 +728,15 @@ void SendPacketToServer(BYTE *Buffer, int position)
 
 		}
 	}
-
+	
 	_asm
 	{
 		mov cl, 1
-		call Consts::SENDOUTGOINGPACKET		
-		
+		call Consts::SENDOUTGOINGPACKET			
 
 
 	}
+	
 
 }
 int Initialize()

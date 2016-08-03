@@ -60,11 +60,10 @@ namespace KonjoBot.Packets
         void HookProxy_OutgoingPacket(byte[] data)
         {
             NetworkMessage msg = new NetworkMessage(client, data);
-            msg.PrepareToRead();
-            msg.Position = 8;
+           
             if (OutgoingPacket != null)
             {
-                OutgoingPacket.Invoke(msg.Data);
+                OutgoingPacket.Invoke(data);
               
             }
             byte Type = msg.GetByte();
@@ -160,14 +159,14 @@ namespace KonjoBot.Packets
                                 HookProxy_OutgoingPacket(buf);
                             break;            
                         case PipePacketType.RecivedIncommingPacket:
-                               byte[] buf2 = new byte[msg.Data.Length - 3];
+             
+                          
+                             byte[] buf2 = new byte[msg.Data.Length - 3];
                                 Array.Copy(msg.Data, 3, buf2, 0, buf2.Length);
-
-                                KonjoBot.Packets.NetworkMessage inc = new KonjoBot.Packets.NetworkMessage(Core.client, buf2);
-                                inc.PrepareToRead();
+                       
                             if(IncommingPacket != null)
                             {
-                                IncommingPacket.Invoke(inc.Data);
+                                IncommingPacket.Invoke(buf2);
                             }
                             break;
                         case PipePacketType.ParsedPacket:                           
@@ -185,6 +184,10 @@ namespace KonjoBot.Packets
                                 IncommingPacket.Invoke(data);
                             }
                             break;
+                        case  PipePacketType.test:
+                            uint adr = msg.GetUInt32();
+                            System.Windows.Forms.MessageBox.Show(adr.ToString("X"));
+                            break;
 
                     }
                 }
@@ -195,6 +198,11 @@ namespace KonjoBot.Packets
 
                 pipe.BeginRead(buffer, 0, buffer.Length, new AsyncCallback(BeginRead), pipe);
             }
+        }
+
+        private void SplitPackets()
+        {
+
         }
         private void ParseIncomingPacket(NetworkMessage msg)
         {
@@ -306,14 +314,7 @@ namespace KonjoBot.Packets
             
             }
         }
-        public void SendToInternal(byte[]data)
-        {
-            NetworkMessage msg = new NetworkMessage();
-            msg.Position = 0;
-            msg.AddByte(11);    
-            msg.AddBytes(data);
-            SendPipePacket(msg.Data);
-        }
+
         private void SendToServer(byte[] data)
         {
             NetworkMessage pack = new NetworkMessage(client);
@@ -345,19 +346,26 @@ namespace KonjoBot.Packets
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetReciveStream, client.Addresses.Packet.INCOMINGDATASTREAM));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetParserFunction, client.Addresses.Packet.PARSERFUNC));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetCreatePacket, client.Addresses.Packet.CreatePacket));
+
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetSENDOUTGOINGPACKET, client.Addresses.Packet.SENDOUTGOINGPACKET));
+            SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetOutgoingDATASTREAM, client.Addresses.Packet.SendPacketData));
+            SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetOUTGOINGDATALEN, client.Addresses.Packet.SendPacketLenght));
+
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SetAddByteFunc, client.Addresses.Packet.AddByteFunc));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.PeekMessage, client.Addresses.Client.PeekMessage));
 
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.Connection, client.Addresses.Client.Status));
+       
 
+
+
+            /*  
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.WalkFunction, client.Addresses.Internal_Functions.WalkFunction));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.AttackFunfion, client.Addresses.Internal_Functions.AttackFunction));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.ItemMove, client.Addresses.Internal_Functions.ItemMoveFunction));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.ItemUseFunction, client.Addresses.Internal_Functions.ItemUseFuction));
             SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType1.SpeakFunction, client.Addresses.Internal_Functions.SpeakFunction));
-
-            /*    SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType.SetDatPointr , Adresses.Client.DatPointer ));
+              SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType.SetDatPointr , Adresses.Client.DatPointer ));
                 SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType.SetOutgoingDATASTREAM, Adresses.Client.OutGotingDataStream));
                 SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType.SetOUTGOINGDATALEN, Adresses.Client.OutGoingDataLenght));
                 SendPipePacket(Pipe.SetAdressPipe.CreatePacket((byte)SetAddressType.SetSENDOUTGOINGPACKET, Adresses.Client.SendOutGoingPacket));

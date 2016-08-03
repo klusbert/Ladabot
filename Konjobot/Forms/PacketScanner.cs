@@ -32,7 +32,7 @@ namespace KonjoBot.Forms
         {
             if(!CheckBox1.Checked) {return;}
             string str = "Server ";
-            for (int i = 8; i < data.Length; i++)
+            for (int i = 0; i < data.Length; i++)
             {
                 byte v = data[i];
                 str += v.ToString("X") + " ";
@@ -51,7 +51,7 @@ namespace KonjoBot.Forms
         {
             if (!CheckBox2.Checked) { return; }
             string str = "Client ";
-            for (int i = 8; i < data.Length; i++)
+            for (int i = 0; i < data.Length; i++)
             {
                 byte v = data[i];
                 str += v.ToString("X") + " ";

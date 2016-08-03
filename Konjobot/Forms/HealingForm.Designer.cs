@@ -85,6 +85,7 @@
             this.CheckBox4.TabIndex = 4;
             this.CheckBox4.Text = "Enable";
             this.CheckBox4.UseVisualStyleBackColor = true;
+            this.CheckBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
             // TextBox9
             // 

@@ -38,10 +38,7 @@ namespace Consts {
 	DWORD WalkFunc = 0;
 	DWORD Connection = 0;
 	DWORD InSideSendPacket = 0x5417E1;
-	DWORD AttackFunction = 0x421050;
-	DWORD ItemMoveFunc = 0x41CF20;
-	DWORD TalkFunc = 0x41F200;
-	DWORD ItemUseFunc = 0x41DF80;
+
 		/* Event Trigger Stuff */
 	DWORD ptrEventTrigger = 0;
 }

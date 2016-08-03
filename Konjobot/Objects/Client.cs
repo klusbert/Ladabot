@@ -59,7 +59,8 @@ namespace KonjoBot.Objects
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.ToString());
+                System.Windows.Forms.MessageBox.Show("Run as admin!");
+             //   System.Windows.Forms.MessageBox.Show(ex.ToString());
                 throw;
             }
         }

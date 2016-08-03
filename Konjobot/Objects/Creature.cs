@@ -18,7 +18,7 @@ namespace KonjoBot.Objects
         public void Attack()
         {
             client.Player.RedSquare = this.Id;
-         //   client.Player.AttackCount += 1;
+            client.Player.AttackCount += 1;
             Packets.OutGoing.Attack.Send(client, (uint)this.Id, (uint)client.Player.AttackCount);        
         }
           public byte Type

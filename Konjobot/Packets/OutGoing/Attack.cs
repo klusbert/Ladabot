@@ -17,8 +17,8 @@ namespace KonjoBot.Packets.OutGoing
             packet.AddByte(0xA1);
             packet.AddUInt32(creatureId);
             packet.AddUInt32(AttackCount);
-          // client.HookProxy.SendPacketToServer(packet.Data);
-            client.HookProxy.SendToInternal(packet.Data);
+           client.HookProxy.SendPacketToServer(packet.Data);
+           
         }
     }
 }

@@ -127,5 +127,10 @@ namespace KonjoBot.Forms
             e.Cancel = true;
             this.Hide();
         }
+
+        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

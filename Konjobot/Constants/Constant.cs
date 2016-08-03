@@ -48,6 +48,7 @@ namespace KonjoBot.Constants
         SendPacketToServer = 9,
         Walk = 10,
         ConnectionStatusChanged = 11,
+        test = 27,
     }
     public enum SpellCategory
     {

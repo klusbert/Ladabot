@@ -402,13 +402,13 @@ namespace KonjoBot.WorkClasses
                         {
                             if (IsLootItem(Convert.ToInt32(i.Id)))
                             {
-                                TakeItem(i, Core.Global.LootList.FirstOrDefault(o => o.Id == i.Id));                              
-                                Thread.Sleep(300);
+                                TakeItem(i, Core.Global.LootList.FirstOrDefault(o => o.Id == i.Id));
+                                Core.SleepRandom();
                             }
                             else if (IsFood(Convert.ToInt32(i.Id)))
                             {
                                 i.Use();
-                                Thread.Sleep(300);
+                                Core.SleepRandom();
                             }
                         }
                         foreach (Item i in c.GetItems())
@@ -426,7 +426,7 @@ namespace KonjoBot.WorkClasses
                                     {
                                         return false;
                                     }
-                                    Thread.Sleep(100);
+                                    Core.SleepRandom();
                                 }
                                 
                                 goto retry;

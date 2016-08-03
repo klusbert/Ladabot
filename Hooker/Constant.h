@@ -34,11 +34,6 @@ namespace Consts {
 	extern DWORD Connection;
 	extern DWORD InSideSendPacket;
 
-	extern DWORD AttackFunction;
-	extern DWORD ItemMoveFunc;
-	extern DWORD TalkFunc;
-	extern DWORD ItemUseFunc;
-
 }
 
 struct NormalText

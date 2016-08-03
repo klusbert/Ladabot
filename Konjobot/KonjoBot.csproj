@@ -224,6 +224,7 @@
     </Compile>
     <Compile Include="Util\WinApi.cs" />
     <Compile Include="WorkClasses\Attacker.cs" />
+    <Compile Include="WorkClasses\Healer.cs" />
     <Compile Include="WorkClasses\Looter.cs" />
     <Compile Include="WorkClasses\Walker.cs" />
     <EmbeddedResource Include="Forms\Alarms.resx">

@@ -406,7 +406,7 @@ namespace KonjoBot.WorkClasses
             {            
                     Core.Looter.IsLooting = true;
                     Core.Looter.LootCorpse(items[0]);
-                    Thread.Sleep(500);
+                    Core.SleepRandom();
                     return false;             
                
             }
