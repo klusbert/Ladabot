@@ -66,3 +66,5 @@ E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.reso
 E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
 E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
 E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.Cache
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Hotkeys.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GetHotkey.resources

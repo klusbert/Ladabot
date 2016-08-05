@@ -30,7 +30,10 @@ namespace KonjoBot.Objects
                    return new Rect(r);
                }
            }
-         
+           public bool IsActive
+           {
+               get { return client.MainWindowHandle == Util.WinApi.GetForegroundWindow(); }
+           }
            public Rect WindowRectangle()
            {
            Util.WinApi.RECT r = new Util.WinApi.RECT();

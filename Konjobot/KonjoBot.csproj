@@ -99,6 +99,12 @@
     <Compile Include="Forms\HealingForm.Designer.cs">
       <DependentUpon>HealingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Hotkeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hotkeys.Designer.cs">
+      <DependentUpon>Hotkeys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\HudForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="Forms\Settings\CaveBotSettings.Designer.cs">
       <DependentUpon>CaveBotSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\GetHotkey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\GetHotkey.Designer.cs">
+      <DependentUpon>GetHotkey.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings\GlobalVarsForm.cs">
       <SubType>Form</SubType>
@@ -216,6 +228,8 @@
     <Compile Include="Util\CodeCaveHelper.cs" />
     <Compile Include="Util\Extension.cs" />
     <Compile Include="Util\GlobalFunttions.cs" />
+    <Compile Include="Util\Hooks.cs" />
+    <Compile Include="Util\KeyboardHook.cs" />
     <Compile Include="Util\Memory.cs" />
     <Compile Include="Util\Priorityqueue.cs" />
     <Compile Include="Util\TibiaMap.cs" />
@@ -239,6 +253,9 @@
     <EmbeddedResource Include="Forms\HealingForm.resx">
       <DependentUpon>HealingForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hotkeys.resx">
+      <DependentUpon>Hotkeys.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HudForm.resx">
       <DependentUpon>HudForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings\CaveBotSettings.resx">
       <DependentUpon>CaveBotSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\GetHotkey.resx">
+      <DependentUpon>GetHotkey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings\GlobalVarsForm.resx">
       <DependentUpon>GlobalVarsForm.cs</DependentUpon>

@@ -14,7 +14,7 @@ namespace KonjoBot.Objects
         private string Path;
         private MapFile[] m_mapfile;
         private System.Object lockThis = new System.Object();
-
+        List<int> WalkAbleIds = new List<int> { 3504};
         public MiniMap(Client cl)
         {
             client = cl;
@@ -391,7 +391,14 @@ namespace KonjoBot.Objects
 
        }
   
-
+       private bool isBlocking(Tile t)
+       {
+           if (t.Ground.ItemData.Blocking || t.Ground.ItemData.BlocksPath || t.Items.Any(i => i.ItemData.Blocking || i.ItemData.BlocksPath && !WalkAbleIds.Contains(i.Id)))
+           {
+               return true;
+           }
+           return false;
+       }
         public IEnumerable<MyPathNode> GetPath(Objects.Location loc,List<Location> BlockingLocs = null)
         {
            lock (lockThis)
@@ -467,13 +474,14 @@ namespace KonjoBot.Objects
                 int cx, cy;
                 cx = t.Location.X - playerX + 300 / 2;
                 cy = t.Location.Y - playerY + 300 / 2;
-                if (t.IsBlocking())
+               /*if (t.IsBlocking())
                 {
                     isWall = true;
                     cost = 500;
 
                 }
-                if (t.Ground.ItemData.Blocking || t.Ground.ItemData.BlocksPath || t.Items.Any(i => i.ItemData.Blocking || i.ItemData.BlocksPath))
+                */
+                if (t.Ground.ItemData.Blocking || t.Ground.ItemData.BlocksPath || t.Items.Any(i => i.ItemData.Blocking || i.ItemData.BlocksPath && !WalkAbleIds.Contains(i.Id)))
                 {
                     isWall = true;
                     cost = 500;
@@ -571,7 +579,7 @@ namespace KonjoBot.Objects
                 Location nextLocation = new Location(client.PlayerLocation.X + NextX, client.PlayerLocation.Y + NextY, client.PlayerLocation.Z);
                 DateTime date = DateTime.Now.AddMilliseconds(1000 - client.Player.MoveMentSpeed);
                 Tile t = client.Map.GetTile(nextLocation);
-                if (t.IsBlocking() && myPath.Count() > 1)
+                if (isBlocking(t) && myPath.Count() > 1)
                 {
                     IsWalking = false;
                     return false;

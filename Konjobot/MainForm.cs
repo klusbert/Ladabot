@@ -159,9 +159,9 @@ namespace KonjoBot
         }
         private void label1_Click(object sender, EventArgs e)
         {
-            Packets.OutGoing.Speech.SendConsole(Core.client, "hi");
-            Core.SleepRandom();
-            Packets.OutGoing.Speech.SendToNpc(Core.client, "deposit all");
+            Item i = new Item(Core.client, 3504);
+            DatReader.ItemData o = i.ItemData;
+
 
         }
         private void DrawTile(Point p,bool blocking,string name,int speed)
@@ -292,6 +292,11 @@ namespace KonjoBot
         private void alarmsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenForm(Core.Alarms);
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OpenForm(Core.HotkeysForm);
         }
 
      

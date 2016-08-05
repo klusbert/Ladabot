@@ -27,6 +27,7 @@ namespace KonjoBot
         public static Forms.PacketScanner PacketScannerFrm;
         public static Forms.ScriptForm ScriptForm;
         public static Forms.Alarms Alarms;
+        public static Forms.Hotkeys HotkeysForm;
         public static MainForm MainForm;
         public static int MinThreadWait = 500;
         public static int MaxThreadWait = 900;
@@ -45,6 +46,7 @@ namespace KonjoBot
             PacketScannerFrm = new Forms.PacketScanner();
             ScriptForm = new Forms.ScriptForm();
             Alarms = new Forms.Alarms();
+            HotkeysForm = new Forms.Hotkeys();
             MainForm = m_mainForm;
             Walker = new WorkClasses.Walker();
             Looter = new WorkClasses.Looter();

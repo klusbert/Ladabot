@@ -267,6 +267,157 @@ namespace KonjoBot.Objects.Bot
             Core.client.HookProxy.SendPacketToClient(msg.Data);
 
         }
+        public static bool DashWest()
+        {
+        
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkWest);
+            return true;
+        }
+        public static bool DashNorth()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkNorth);
+            return true;
+        }
+        public static bool DashSouth()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkSouth);
+            return true;
+        }
+        public static bool DashEast()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkEast);
+            return true;
+        }
+
+        public static bool DashNorthWest()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkNorthWest);
+            return true;
+        }
+        public static bool DashNorthEast()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkNorthEast);
+            return true;
+        }
+        public static bool DashSouthWest()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkSouthWest);
+            return true;
+        }
+        public static bool DashSouthEast()
+        {
+            Packets.OutGoing.Walk.Send(Core.client, Constants.WalkDirection.WalkSouthEast);
+            return true;
+        }
+        public static void Deposit(int BoxIndex,params int[] list)
+        {
+            Tile t = ReachDepot();
+            Container Container= OpenDepot(t,BoxIndex);
+            AddItemsToDepot(Container, list);
+
+        }
+        private static Container OpenDepot(Tile t,int boxIndex)
+        {
+            List<int> DepotList = new List<int> { 3497, 3498, 3499, 3500 };
+            int ret = 0 ;
+            foreach (Item i in t.Items)
+            {
+                if (DepotList.Contains(i.Id))
+                {
+                    int index = Core.client.Inventory.ContainersCount();
+                    ret = index;
+                    i.Use((byte)index);
+                    DateTime d = DateTime.Now.AddSeconds(5);
+                    while (Core.client.Inventory.ContainersCount() == index)
+                    {
+                        if (d <= DateTime.Now)
+                        {
+                            Print("Could not open depot :'(");
+                            return null;
+                        }
+                    }
+                    Core.SleepRandom();
+                    Core.SleepRandom();
+                    foreach (Item j in Core.client.Inventory.GetContainer(index).GetItems())
+                    {                        
+                        j.Use((byte)index);
+                        break;
+                    }
+                    Core.SleepRandom();
+                    Core.SleepRandom();
+                    int boxVal = 1;
+                    foreach (Item j in Core.client.Inventory.GetContainer(index).GetItems())
+                    {
+                        if (boxVal == boxIndex)
+                        {
+                            j.Use((byte)index);
+                        }
+                        boxVal += 1;
+                    }                   
+                }           
+                
+            }
+            return Core.client.Inventory.GetContainer(ret);
+        }
+        public static Tile ReachDepot()
+        {
+            foreach (Tile t in Core.client.Map.GetTilesSameFloor().OrderBy(k => k.Location.DistanceTo(Core.client.PlayerLocation)).ToList())
+            {
+                if (HaveDepot(t))
+                {
+                    IEnumerable<Objects.MiniMap.MyPathNode> path = Core.client.MiniMap.GetPath(t.Location);
+                    if (path != null)
+                    {
+                        DateTime d = DateTime.Now.AddSeconds(5);
+                        Core.client.MiniMap.ProcessDirections(path, t.Location);
+                        while (Core.client.PlayerLocation.IsAdjacentTo(t.Location) == false)
+                        {
+                            if (d <= DateTime.Now)
+                            {
+                                Print("Did not find any depot :'(");
+                                return null;
+                            }
+                        }
+                        return t;
+                    }
+                    else { continue; }
+                }
+
+            }
+            return null;
+        }
+        private static bool HaveDepot(Tile t)
+        {
+            List<int> DepotList = new List<int> { 3497, 3498, 3499, 3500 };
+            foreach (Item i in t.Items)
+            {
+                if (DepotList.Contains(i.Id)) { return true; }
+            }
+            return false;
+        }
+        private static void AddItemsToDepot(Container TCont,params int[] list)
+        {
+            foreach (Container c in Core.client.Inventory.GetContainers())
+            {
+                List<Item> Items = c.GetItems().ToList();
+                Items.Reverse();
+                if(c.Number != TCont.Number)
+                {
+                    foreach (Item i in Items)
+                    {
+                        i.Move(ItemLocation.FromContainer((byte)TCont.Number, (byte)(TCont.Ammount + 1)));
+                        Core.SleepRandom();
+                    }
+                }                
+            }
+            Core.SleepRandom();
+            TCont.Close();
+        }
+   
+        public static void OpenMainBp()
+        {
+
+        }
         public static string GotoLabel
         {
             set
