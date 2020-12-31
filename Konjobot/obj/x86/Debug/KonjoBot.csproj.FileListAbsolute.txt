@@ -125,3 +125,58 @@ D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CoreCompil
 D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CopyComplete
 D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Healingform1.resources
 D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Mapviewer.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.csprojAssemblyReference.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Healingform1.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Hotkeys.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Mapviewer.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.Clear_Modules.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GetHotkey.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.csproj.CoreCompileInputs.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.exe
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.csprojFakesResolveAssemblyReference.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Debug\KonjoBot.exe.config
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Debug\KonjoBot.exe
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Debug\KonjoBot.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fakes.args
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Accessibility.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Address Finding.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Address Finding.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.fakesconfig
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.xml
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.CSharp.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.CSharp.xml
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.ah
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.ch
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.cs
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.csproj
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.fakes
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\f.fakesconfig
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\.NETFramework,Version=v4.0.AssemblyAttributes.cs
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csproj.CopyComplete
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csproj.CoreCompileInputs.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csproj.FileListAbsolute.txt
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csprojAssemblyReference.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\FastColoredTextBox.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\FastColoredTextBox.Fakes.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\KonjoBot.csproj.CopyComplete

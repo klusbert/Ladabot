@@ -1,0 +1,15 @@
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.xml
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.Fakes.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Accessibility.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Address Finding.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\FastColoredTextBox.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.CSharp.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Address Finding.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\b\Microsoft.CSharp.xml
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csprojAssemblyReference.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csproj.CoreCompileInputs.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\f.csproj.CopyComplete
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\FastColoredTextBox.Fakes.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Konjobot\obj\x86\Debug\Fakes\fctb\o\FastColoredTextBox.Fakes.pdb

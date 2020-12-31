@@ -8,3 +8,9 @@ E:\Mina project\LadaBot source\Address Finding\Address Finding\bin\Debug\Address
 E:\Mina project\LadaBot source\Address Finding\Address Finding\obj\Debug\Address Finding.csprojResolveAssemblyReference.cache
 E:\Mina project\LadaBot source\Address Finding\Address Finding\obj\Debug\Address Finding.dll
 E:\Mina project\LadaBot source\Address Finding\Address Finding\obj\Debug\Address Finding.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\bin\Debug\Address Finding.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\bin\Debug\Address Finding.pdb
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\obj\Debug\Address Finding.csprojAssemblyReference.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\obj\Debug\Address Finding.csproj.CoreCompileInputs.cache
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\obj\Debug\Address Finding.dll
+C:\Users\klusb\Desktop\Ny mapp\Ladabot\Address Finding\Address Finding\obj\Debug\Address Finding.pdb
