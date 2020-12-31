@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2062850A-4773-4A4C-9BFD-A24F4FDD72FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KonjoBot</RootNamespace>
+    <AssemblyName>KonjoBot</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\LadaBot RealOt\LadaBot RealOt\bin\Release\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adresses\Addresses.cs" />
+    <Compile Include="Adresses\Battlelist.cs" />
+    <Compile Include="Adresses\Client.cs" />
+    <Compile Include="Adresses\Container.cs" />
+    <Compile Include="Adresses\Creature.cs" />
+    <Compile Include="Adresses\DatItem.cs" />
+    <Compile Include="Adresses\Hotkeys.cs" />
+    <Compile Include="Adresses\Internal Functions.cs" />
+    <Compile Include="Adresses\Inventory.cs" />
+    <Compile Include="Adresses\Map.cs" />
+    <Compile Include="Adresses\Packet.cs" />
+    <Compile Include="Adresses\Player.cs" />
+    <Compile Include="Adresses\TextDisplay.cs" />
+    <Compile Include="Constants\Constant.cs" />
+    <Compile Include="Constants\ItemList.cs" />
+    <Compile Include="Constants\Items.cs" />
+    <Compile Include="Constants\Spells.cs" />
+    <Compile Include="Constants\TileList.cs" />
+    <Compile Include="Constants\Tiles.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Forms\Alarms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alarms.Designer.cs">
+      <DependentUpon>Alarms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cavebot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cavebot.Designer.cs">
+      <DependentUpon>Cavebot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientChooser.Designer.cs">
+      <DependentUpon>ClientChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HealingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HealingForm.Designer.cs">
+      <DependentUpon>HealingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Healingform1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Healingform1.Designer.cs">
+      <DependentUpon>Healingform1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hotkeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hotkeys.Designer.cs">
+      <DependentUpon>Hotkeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HudForm.Designer.cs">
+      <DependentUpon>HudForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mapviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mapviewer.Designer.cs">
+      <DependentUpon>Mapviewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PacketScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PacketScanner.Designer.cs">
+      <DependentUpon>PacketScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptForm.Designer.cs">
+      <DependentUpon>ScriptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\AddLoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\AddLoot.Designer.cs">
+      <DependentUpon>AddLoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\AddTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\AddTarget.Designer.cs">
+      <DependentUpon>AddTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\AddWaypoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\AddWaypoint.Designer.cs">
+      <DependentUpon>AddWaypoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\CaveBotSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\CaveBotSettings.Designer.cs">
+      <DependentUpon>CaveBotSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Clear Modules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Clear Modules.Designer.cs">
+      <DependentUpon>Clear Modules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\GetHotkey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\GetHotkey.Designer.cs">
+      <DependentUpon>GetHotkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\GlobalVarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\GlobalVarsForm.Designer.cs">
+      <DependentUpon>GlobalVarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Battlelist.cs" />
+    <Compile Include="Objects\Bot\Corpse.cs" />
+    <Compile Include="Objects\Bot\HealingRule.cs" />
+    <Compile Include="Objects\Bot\LootItem.cs" />
+    <Compile Include="Objects\Bot\Script.cs" />
+    <Compile Include="Objects\Bot\ScriptObjects.cs" />
+    <Compile Include="Objects\Bot\Settnings.cs" />
+    <Compile Include="Objects\Bot\Target.cs" />
+    <Compile Include="Objects\Bot\Waypoint.cs" />
+    <Compile Include="Objects\Client.FormHelper.cs" />
+    <Compile Include="Objects\Client.Inputhelper.cs" />
+    <Compile Include="Objects\Creature.cs" />
+    <Compile Include="Objects\DatReader.cs" />
+    <Compile Include="Objects\FloorChanger.cs" />
+    <Compile Include="Objects\Hotkey.cs" />
+    <Compile Include="Objects\Map.cs" />
+    <Compile Include="Objects\MapFile.cs" />
+    <Compile Include="Objects\MiniMap 4567.cs" />
+    <Compile Include="Objects\MiniMap3.cs" />
+    <Compile Include="Objects\MiniMap.cs" />
+    <Compile Include="Objects\NewInventory.cs" />
+    <Compile Include="Objects\Spell.cs" />
+    <Compile Include="Packets\AdlerChecksum.cs" />
+    <Compile Include="Objects\Hotkeys.cs" />
+    <Compile Include="Objects\Item.cs" />
+    <Compile Include="Objects\Location.cs" />
+    <Compile Include="Objects\MiniMap1.cs" />
+    <Compile Include="Objects\Player.cs" />
+    <Compile Include="Objects\Structures.cs" />
+    <Compile Include="Objects\Client.cs" />
+    <Compile Include="Objects\Client.MemoryHelper.cs" />
+    <Compile Include="Objects\Client.WindowHelper.cs" />
+    <Compile Include="Objects\Container.cs" />
+    <Compile Include="Objects\Inventory.cs" />
+    <Compile Include="Objects\Tile.cs" />
+    <Compile Include="Packets\HookProxy.cs" />
+    <Compile Include="Packets\IncomingPacket.cs" />
+    <Compile Include="Packets\Incomming\CreatureHealthPacket.cs" />
+    <Compile Include="Packets\Incomming\DeleteInContainer.cs" />
+    <Compile Include="Packets\Incomming\MissileEffect.cs" />
+    <Compile Include="Packets\Incomming\MoveCreaturePacket.cs" />
+    <Compile Include="Packets\Incomming\OpenContainerPacket.cs" />
+    <Compile Include="Packets\Incomming\PlayerDataPacket.cs" />
+    <Compile Include="Packets\Incomming\TextMessagePacket.cs" />
+    <Compile Include="Packets\Incomming\TileAddThingPacket.cs" />
+    <Compile Include="Packets\NetworkMessage.cs" />
+    <Compile Include="Packets\OutGoing\Attack.cs" />
+    <Compile Include="Packets\OutGoing\AttackMode.cs" />
+    <Compile Include="Packets\OutGoing\BrowseField.cs" />
+    <Compile Include="Packets\OutGoing\CloseContainer.cs" />
+    <Compile Include="Packets\OutGoing\ItemUse.cs" />
+    <Compile Include="Packets\OutGoing\ItemUseOn.cs" />
+    <Compile Include="Packets\OutGoing\MoveItem.cs" />
+    <Compile Include="Packets\OutGoing\ShopBuy.cs" />
+    <Compile Include="Packets\OutGoing\Speech.cs" />
+    <Compile Include="Packets\OutGoing\Stop.cs" />
+    <Compile Include="Packets\OutGoing\UseItemOnCreature.cs" />
+    <Compile Include="Packets\OutGoing\Walk.cs" />
+    <Compile Include="Packets\Packet.cs" />
+    <Compile Include="Packets\Parser.cs" />
+    <Compile Include="Packets\Pipe\AddTextPipe.cs" />
+    <Compile Include="Packets\Pipe\SetAddreses.cs" />
+    <Compile Include="Packets\Pipe\Walk.cs" />
+    <Compile Include="Packets\TibiaSock.cs" />
+    <Compile Include="Packets\Xtea.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Packets\Proxy.cs" />
+    <Compile Include="Util\Astar.cs" />
+    <Compile Include="Util\AStarPathFinder.cs" />
+    <Compile Include="Util\CodeCaveHelper.cs" />
+    <Compile Include="Util\Extension.cs" />
+    <Compile Include="Util\GlobalFunttions.cs" />
+    <Compile Include="Util\Hooks.cs" />
+    <Compile Include="Util\KeyboardHook.cs" />
+    <Compile Include="Util\MapFile.cs" />
+    <Compile Include="Util\MapViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Memory.cs" />
+    <Compile Include="Util\Priorityqueue.cs" />
+    <Compile Include="Util\TibiaMap.cs" />
+    <Compile Include="Util\Timer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\WinApi.cs" />
+    <Compile Include="WorkClasses\Attacker.cs" />
+    <Compile Include="WorkClasses\Healer.cs" />
+    <Compile Include="WorkClasses\Looter.cs" />
+    <Compile Include="WorkClasses\Walker.cs" />
+    <EmbeddedResource Include="Forms\Alarms.resx">
+      <DependentUpon>Alarms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cavebot.resx">
+      <DependentUpon>Cavebot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientChooser.resx">
+      <DependentUpon>ClientChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HealingForm.resx">
+      <DependentUpon>HealingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Healingform1.resx">
+      <DependentUpon>Healingform1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hotkeys.resx">
+      <DependentUpon>Hotkeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HudForm.resx">
+      <DependentUpon>HudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mapviewer.resx">
+      <DependentUpon>Mapviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PacketScanner.resx">
+      <DependentUpon>PacketScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScriptForm.resx">
+      <DependentUpon>ScriptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\AddLoot.resx">
+      <DependentUpon>AddLoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\AddTarget.resx">
+      <DependentUpon>AddTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\AddWaypoint.resx">
+      <DependentUpon>AddWaypoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\CaveBotSettings.resx">
+      <DependentUpon>CaveBotSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Clear Modules.resx">
+      <DependentUpon>Clear Modules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\GetHotkey.resx">
+      <DependentUpon>GetHotkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\GlobalVarsForm.resx">
+      <DependentUpon>GlobalVarsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Add v2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Erase.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Open file.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Save file.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tes1t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Address Finding\Address Finding\Address Finding.csproj">
+      <Project>{72c7bd6b-dec1-4f1d-b25d-c4bb5bd7ec4d}</Project>
+      <Name>Address Finding</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

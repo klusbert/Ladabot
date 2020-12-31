@@ -1,0 +1,127 @@
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\bin\Debug\KonjoBot.exe.config
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.exe
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.pdb
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.Cache
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\bin\Debug\KonjoBot.exe
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\bin\Debug\KonjoBot.pdb
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.csprojResolveAssemblyReference.cache
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.MainForm.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\bin\Debug\FastColoredTextBox.dll
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+E:\Visual Studiio\KonjoBotvs 2012\KonjoBot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\bin\Debug\KonjoBot.exe.config
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.exe
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.pdb
+C:\Users\Klusbert\Desktop\LadaBot\Debug\KonjoBot.exe.config
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.csprojResolveAssemblyReference.cache
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+C:\Users\Klusbert\Desktop\LadaBot\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.Cache
+C:\Users\Klusbert\Desktop\LadaBot\Debug\KonjoBot.exe
+C:\Users\Klusbert\Desktop\LadaBot\Debug\KonjoBot.pdb
+E:\Mina project\LadaBot source\Debug\KonjoBot.exe.config
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.exe
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.pdb
+E:\Mina project\LadaBot source\Debug\KonjoBot.exe
+E:\Mina project\LadaBot source\Debug\KonjoBot.pdb
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csprojResolveAssemblyReference.cache
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.Cache
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Hotkeys.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GetHotkey.resources
+E:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.Clear_Modules.resources
+D:\Mina project\LadaBot source\Debug\KonjoBot.exe.config
+D:\Mina project\LadaBot source\Debug\KonjoBot.exe
+D:\Mina project\LadaBot source\Debug\KonjoBot.pdb
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Hotkeys.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.Clear_Modules.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GetHotkey.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.Cache
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.exe
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.pdb
+Z:\Backup\Mina project\LadaBot source\Debug\KonjoBot.exe.config
+Z:\Backup\Mina project\LadaBot source\Debug\KonjoBot.exe
+Z:\Backup\Mina project\LadaBot source\Debug\KonjoBot.pdb
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csprojAssemblyReference.cache
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Alarms.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Cavebot.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ClientChooser.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HealingForm.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Hotkeys.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.HudForm.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.PacketScanner.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.ScriptForm.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddLoot.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddTarget.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.AddWaypoint.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.CaveBotSettings.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.Clear_Modules.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GetHotkey.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Settings.GlobalVarsForm.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Splash.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.MainForm.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Properties.Resources.resources
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.GenerateResource.cache
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CoreCompileInputs.cache
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CopyComplete
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.exe
+Z:\Backup\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.pdb
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csprojAssemblyReference.cache
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CoreCompileInputs.cache
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.csproj.CopyComplete
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Healingform1.resources
+D:\Mina project\LadaBot source\Konjobot\obj\x86\Debug\KonjoBot.Forms.Mapviewer.resources

@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<Global xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Waypoints>
+    <Waypoint>
+      <Location>
+        <X>32369</X>
+        <Y>32213</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment>start</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32369</X>
+        <Y>32190</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32376</X>
+        <Y>32182</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32359</X>
+        <Y>32189</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32341</X>
+        <Y>32190</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32369</X>
+        <Y>32195</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32368</X>
+        <Y>32212</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32337</X>
+        <Y>32214</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32333</X>
+        <Y>32214</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32329</X>
+        <Y>32222</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32339</X>
+        <Y>32249</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32367</X>
+        <Y>32251</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32363</X>
+        <Y>32243</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32368</X>
+        <Y>32227</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32370</X>
+        <Y>32213</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>Print("You Have earned " &amp; goldcount &amp; " this hunt")
+
+if goldcount &gt; 1000 then
+    gotolabel = "Deposit"
+else
+    gotolabel = "Start"
+end if</Script>
+      <Comment>check</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32370</X>
+        <Y>32213</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>UpUse</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment>deposit</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32360</X>
+        <Y>32216</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32335</X>
+        <Y>32249</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32319</X>
+        <Y>32258</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>Say("hi")
+wait()
+NpcSay("deposit all")
+wait()
+NpcSay("yes")
+wait()
+NextWaypoint()
+</Script>
+      <Comment>changegold</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32338</X>
+        <Y>32239</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32345</X>
+        <Y>32224</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32348</X>
+        <Y>32231</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32349</X>
+        <Y>32225</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>deposit(3035)
+NextWaypoint()</Script>
+      <Comment>depositing</Comment>
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32348</X>
+        <Y>32231</Y>
+        <Z>8</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32354</X>
+        <Y>32216</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32370</X>
+        <Y>32215</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>Walk</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+    <Waypoint>
+      <Location>
+        <X>32370</X>
+        <Y>32213</Y>
+        <Z>7</Z>
+        <WalkCost>0</WalkCost>
+      </Location>
+      <Type>DownUse</Type>
+      <Script>NextWaypoint()</Script>
+      <Comment />
+    </Waypoint>
+  </Waypoints>
+  <LootList>
+    <LootItem>
+      <Id>3031</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>16</ContainerDestionation>
+      <DropInDepot>false</DropInDepot>
+    </LootItem>
+  </LootList>
+  <TargetList>
+    <Target>
+      <Name>Rat</Name>
+      <FollowType>Reach</FollowType>
+      <Script />
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>Cave Rat</Name>
+      <FollowType>Reach</FollowType>
+      <Script />
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>Spider</Name>
+      <FollowType>Reach</FollowType>
+      <Script />
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+    <Target>
+      <Name>Bat</Name>
+      <FollowType>Reach</FollowType>
+      <Script />
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+  </TargetList>
+  <ScriptList />
+  <GlobalVariables>'Your variables here</GlobalVariables>
+  <PlayerOnScreen>false</PlayerOnScreen>
+  <PrivateMessage>false</PrivateMessage>
+  <Message>false</Message>
+  <lowHp>false</lowHp>
+  <lowHpValue>0</lowHpValue>
+  <LowMana>false</LowMana>
+  <LowManavalue>0</LowManavalue>
+  <FriendList />
+  <WalkerEnabled>true</WalkerEnabled>
+  <SkipRange>3</SkipRange>
+  <SkipWalk>true</SkipWalk>
+  <AttackerEnabled>true</AttackerEnabled>
+  <MinDist>2</MinDist>
+  <MaxDist>4</MaxDist>
+  <StickToTarget_Prio>2</StickToTarget_Prio>
+  <LooterEnabled>true</LooterEnabled>
+  <OpenCorpses>true</OpenCorpses>
+  <LootWhenAllIsDead>false</LootWhenAllIsDead>
+  <LootFriendly>false</LootFriendly>
+  <OpenNextBp>false</OpenNextBp>
+  <FullLight>true</FullLight>
+  <ManatrainEnable>true</ManatrainEnable>
+  <ManaTrainMana>60</ManaTrainMana>
+  <ManatrainSpell>exura ico</ManatrainSpell>
+  <SpellHealHealth />
+  <SpellHealMana />
+  <SpellHealSpell />
+  <SpellHealEnable>false</SpellHealEnable>
+  <ItemHealHealth />
+  <ItemHealItem />
+  <ItemHealEnable>false</ItemHealEnable>
+  <ManaRestoreMana />
+  <ManaRestoreItem />
+  <ManaRestoreEnable>false</ManaRestoreEnable>
+</Global>

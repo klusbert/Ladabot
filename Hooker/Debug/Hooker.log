@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Core.cpp
+D:\Mina project\LadaBot source\Hooker\Core.cpp(105,36): warning C4101: 'funcAddress': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(131): warning C4405: 'Test': identifier is reserved word
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,34): warning C4101: 'height': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,27): warning C4101: 'width': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,64): warning C4101: 'bSize': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,56): warning C4101: 'itemID': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,42): warning C4101: 'guiID': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(190,49): warning C4101: 'count': unreferenced local variable
+D:\Mina project\LadaBot source\Hooker\Core.cpp(274,19): warning C4018: '<': signed/unsigned mismatch
+  Hooker.vcxproj -> D:\Mina project\LadaBot source\Hooker\..\Debug\Hooker.dll

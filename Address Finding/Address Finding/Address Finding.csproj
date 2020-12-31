@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72C7BD6B-DEC1-4F1D-B25D-C4BB5BD7EC4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemoryScanner</RootNamespace>
+    <AssemblyName>Address Finding</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addresses\Battlelist\MaxCreatures.cs" />
+    <Compile Include="Addresses\Battlelist\Start.cs" />
+    <Compile Include="Addresses\Battlelist\Step.cs" />
+    <Compile Include="Addresses\Client\GuiPointer.cs" />
+    <Compile Include="Addresses\Client\lastSeenID.cs" />
+    <Compile Include="Addresses\Client\Mc.cs" />
+    <Compile Include="Addresses\Client\PeekMessageA.cs" />
+    <Compile Include="Addresses\Client\Ping.cs" />
+    <Compile Include="Addresses\Client\Status.cs" />
+    <Compile Include="Addresses\Client\StatusBarText.cs" />
+    <Compile Include="Addresses\Client\StatusBarTime.cs" />
+    <Compile Include="Addresses\Container\ContainerPointer.cs" />
+    <Compile Include="Addresses\GetAddresses.cs" />
+    <Compile Include="Addresses\Internal Functions\Attack.cs" />
+    <Compile Include="Addresses\Internal Functions\ItemMove.cs" />
+    <Compile Include="Addresses\Internal Functions\ItemUse.cs" />
+    <Compile Include="Addresses\Internal Functions\SpeakFunction.cs" />
+    <Compile Include="Addresses\Internal Functions\WalkFunction.cs" />
+    <Compile Include="Addresses\Inventory\Inventory Start.cs" />
+    <Compile Include="Addresses\Map\FullLight.cs" />
+    <Compile Include="Addresses\Map\MapArray.cs" />
+    <Compile Include="Addresses\Map\MapPointer.cs" />
+    <Compile Include="Addresses\Map\StepTile.cs" />
+    <Compile Include="Addresses\MyAddresses.cs" />
+    <Compile Include="Addresses\Packet\AddPacketByte.cs" />
+    <Compile Include="Addresses\Packet\CreatePacket.cs" />
+    <Compile Include="Addresses\Packet\GetNextPacket.cs" />
+    <Compile Include="Addresses\Packet\OutgoingBuffer.cs" />
+    <Compile Include="Addresses\Packet\OutGoingPacketLen.cs" />
+    <Compile Include="Addresses\Packet\ParseFunction.cs" />
+    <Compile Include="Addresses\Packet\RecivePointer.cs" />
+    <Compile Include="Addresses\Packet\ReciveStream.cs" />
+    <Compile Include="Addresses\Packet\SendPacket.cs" />
+    <Compile Include="Addresses\Packet\SendPointer.cs" />
+    <Compile Include="Addresses\Packet\Xtea.cs" />
+    <Compile Include="Addresses\Player\AttackCount.cs" />
+    <Compile Include="Addresses\Player\Cap.cs" />
+    <Compile Include="Addresses\Player\Experience.cs" />
+    <Compile Include="Addresses\Player\Food.cs" />
+    <Compile Include="Addresses\Player\Health.cs" />
+    <Compile Include="Addresses\Player\Level.cs" />
+    <Compile Include="Addresses\Player\Mana.cs" />
+    <Compile Include="Addresses\Player\ManaMax.cs" />
+    <Compile Include="Addresses\Player\PlayerFlags.cs" />
+    <Compile Include="Addresses\Player\PlayerId.cs" />
+    <Compile Include="Addresses\Player\PlayerX.cs" />
+    <Compile Include="Addresses\Player\PlayerY.cs" />
+    <Compile Include="Addresses\Player\PlayerZ.cs" />
+    <Compile Include="Addresses\Player\RedSquare.cs" />
+    <Compile Include="Addresses\Player\XorKey.cs" />
+    <Compile Include="Addresses\Text\NopFps.cs" />
+    <Compile Include="Addresses\Text\PrintFps.cs" />
+    <Compile Include="Addresses\Text\PrintText.cs" />
+    <Compile Include="Addresses\Text\ShowFPS.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CodeCaveHelper.cs" />
+    <Compile Include="Util\GlobalVars.cs" />
+    <Compile Include="Util\MemoryReader.cs" />
+    <Compile Include="Util\MemoryScanner.cs" />
+    <Compile Include="Util\Packet.cs" />
+    <Compile Include="Util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

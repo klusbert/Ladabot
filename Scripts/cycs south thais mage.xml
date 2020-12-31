@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Global xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Waypoints />
+  <LootList>
+    <LootItem>
+      <Id>3031</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>16</ContainerDestionation>
+      <DropInDepot>false</DropInDepot>
+    </LootItem>
+    <LootItem>
+      <Id>9657</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>16</ContainerDestionation>
+      <DropInDepot>false</DropInDepot>
+    </LootItem>
+  </LootList>
+  <TargetList>
+    <Target>
+      <Name>Cyclops</Name>
+      <FollowType>Reach</FollowType>
+      <Script>UseOnTarget(3198)</Script>
+      <Prio>0</Prio>
+      <AvoidWave>false</AvoidWave>
+    </Target>
+  </TargetList>
+  <ScriptList>
+    <Script>
+      <Name>Auto invis</Name>
+      <ScriptCode>  Public Sub Main()
+    'Your Code here
+    If Not Invisible Then
+        Say("Utana Vid")
+        wait()
+        wait()
+    End If
+  End Sub
+
+</ScriptCode>
+      <ErrorSet>false</ErrorSet>
+      <IsRunning>false</IsRunning>
+      <ShouldRun>true</ShouldRun>
+    </Script>
+  </ScriptList>
+  <GlobalVariables>'Your variables here</GlobalVariables>
+  <PlayerOnScreen>false</PlayerOnScreen>
+  <PrivateMessage>false</PrivateMessage>
+  <Message>false</Message>
+  <lowHp>false</lowHp>
+  <lowHpValue>0</lowHpValue>
+  <LowMana>false</LowMana>
+  <LowManavalue>0</LowManavalue>
+  <FriendList />
+  <WalkerEnabled>false</WalkerEnabled>
+  <SkipRange>3</SkipRange>
+  <SkipWalk>true</SkipWalk>
+  <AttackerEnabled>true</AttackerEnabled>
+  <MinDist>2</MinDist>
+  <MaxDist>4</MaxDist>
+  <StickToTarget_Prio>2</StickToTarget_Prio>
+  <LooterEnabled>true</LooterEnabled>
+  <OpenCorpses>true</OpenCorpses>
+  <LootWhenAllIsDead>false</LootWhenAllIsDead>
+  <LootFriendly>false</LootFriendly>
+  <OpenNextBp>false</OpenNextBp>
+  <FullLight>true</FullLight>
+  <ManatrainEnable>false</ManatrainEnable>
+  <ManaTrainMana />
+  <ManatrainSpell />
+  <SpellHealHealth />
+  <SpellHealMana />
+  <SpellHealSpell />
+  <SpellHealEnable>false</SpellHealEnable>
+  <ItemHealHealth />
+  <ItemHealItem />
+  <ItemHealEnable>false</ItemHealEnable>
+  <ManaRestoreMana>450</ManaRestoreMana>
+  <ManaRestoreItem>268</ManaRestoreItem>
+  <ManaRestoreEnable>true</ManaRestoreEnable>
+</Global>

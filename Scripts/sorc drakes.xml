@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Global xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Waypoints />
+  <LootList>
+    <LootItem>
+      <Id>3031</Id>
+      <Destination>Container</Destination>
+      <Cap>0</Cap>
+      <ContainerDestionation>0</ContainerDestionation>
+      <DropInDepot>false</DropInDepot>
+    </LootItem>
+  </LootList>
+  <TargetList>
+    <Target>
+      <Name>Dragon</Name>
+      <FollowType>Reach</FollowType>
+      <Script>Say("exori frigo")</Script>
+      <Prio>0</Prio>
+      <AvoidWave>true</AvoidWave>
+    </Target>
+  </TargetList>
+  <ScriptList>
+    <Script>
+      <Name>Change gold</Name>
+      <ScriptCode>  Public Sub Main()
+    'Your Code here
+    ChangeGold()
+  End Sub 
+private Sub ChangeGold
+      For Each c As Container In Client.Inventory.GetContainers
+          For Each i As Item In c.GetItems
+              If i.Id = 3031 AndAlso i.Count = 100 Then
+                  ChangeGold(i)
+                  Exit Sub
+              End if
+              If i.Id = 3035 AndAlso i.Count = 100 Then
+                  ChangeGold(i)
+                  Exit Sub
+              End if 
+          Next
+      Next
+      
+  End Sub
+  Private Sub ChangeGold(byval item As Item)
+      item.Use()
+      Wait(1000)
+  End Sub
+</ScriptCode>
+      <ErrorSet>false</ErrorSet>
+      <IsRunning>false</IsRunning>
+      <ShouldRun>true</ShouldRun>
+    </Script>
+  </ScriptList>
+  <GlobalVariables>'Your variables here</GlobalVariables>
+  <PlayerOnScreen>false</PlayerOnScreen>
+  <PrivateMessage>false</PrivateMessage>
+  <Message>false</Message>
+  <lowHp>false</lowHp>
+  <lowHpValue>0</lowHpValue>
+  <LowMana>false</LowMana>
+  <LowManavalue>0</LowManavalue>
+  <FriendList />
+  <WalkerEnabled>false</WalkerEnabled>
+  <SkipRange>3</SkipRange>
+  <SkipWalk>true</SkipWalk>
+  <AttackerEnabled>true</AttackerEnabled>
+  <MinDist>2</MinDist>
+  <MaxDist>4</MaxDist>
+  <StickToTarget_Prio>2</StickToTarget_Prio>
+  <LooterEnabled>true</LooterEnabled>
+  <OpenCorpses>true</OpenCorpses>
+  <LootWhenAllIsDead>false</LootWhenAllIsDead>
+  <LootFriendly>false</LootFriendly>
+  <OpenNextBp>false</OpenNextBp>
+  <FullLight>false</FullLight>
+  <ManatrainEnable>false</ManatrainEnable>
+  <ManaTrainMana />
+  <ManatrainSpell />
+  <SpellHealHealth>260</SpellHealHealth>
+  <SpellHealMana>80</SpellHealMana>
+  <SpellHealSpell>exura gran</SpellHealSpell>
+  <SpellHealEnable>true</SpellHealEnable>
+  <ItemHealHealth />
+  <ItemHealItem />
+  <ItemHealEnable>false</ItemHealEnable>
+  <ManaRestoreMana />
+  <ManaRestoreItem />
+  <ManaRestoreEnable>false</ManaRestoreEnable>
+</Global>
